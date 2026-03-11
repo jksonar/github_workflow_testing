@@ -1,0 +1,11 @@
+name: Install httpd
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Install httpd 
+      - run: yum install httpd -y 
