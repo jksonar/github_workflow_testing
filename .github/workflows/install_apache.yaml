@@ -7,5 +7,14 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
+      - name: who am i 
+        run: whoami
+
+      - name: List all environment variables 
+        run: env
+
+      - name: check export command output
+        run: export
+
       - name: Install httpd 
         run: sudo yum install httpd -y 
