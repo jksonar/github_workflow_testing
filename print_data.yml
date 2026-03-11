@@ -1,0 +1,12 @@
+name: check data
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  check:
+    runs-on: Linux
+    steps:
+      - name: cat passwd file
+        run: cat /etc/passwd
+        
