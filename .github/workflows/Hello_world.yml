@@ -3,7 +3,7 @@ on: [workflow_dispatch] # Allows you to run it manually from the Actions tab
 
 jobs:
   say-hello:
-    runs-on: self-hostedgit 
+    runs-on: self-hosted
     steps:
       - name: Greet the user
         run: echo "Hello World!"
