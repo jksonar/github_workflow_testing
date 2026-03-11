@@ -16,5 +16,8 @@ jobs:
       - name: check export command output
         run: export
 
+      - name: what is github workspace
+        run: echo "workspace location ${{github.workspace}}"
+
       - name: Install httpd 
         run: sudo yum install httpd -y 
